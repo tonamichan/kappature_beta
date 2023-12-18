@@ -395,7 +395,7 @@ module.exports = {
   },
   methods: {
     setTaskData: function() {
-      fetch("./task-data/tasks.json")
+      fetch("./task-data/task.json")
       .then((response) => response.json())
       .then((json) => this.tasks = json.data);
     },
