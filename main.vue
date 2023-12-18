@@ -119,6 +119,12 @@
           >
             完了済を隠す
           </button>
+          <button
+            class="level-item button is-danger"
+            @click="resetExecTask"
+          >
+            進捗をリセットする
+          </button>
         </div>
       </div>
     </div>
@@ -314,6 +320,11 @@ module.exports = {
     },
     toggleDisplayDoneTask: function () {
       this.displayDoneTasks = !this.displayDoneTasks;
+    },
+    resetExecTask: function () {
+      // TODO: 確認メッセージ出す
+      this.execList = []
+      localStorage.execList = JSON.stringify(this.execList, undefined, 1);
     },
     getPersonName: function (id) {
       // トレーダーに振ったidと添字が一致するようにしてる
