@@ -116,6 +116,20 @@
         </div>
         <div class="column side-menu has-background-warning">
           <button
+            v-if="!autoComplete"
+            class="level-item button is-info is-light"
+            @click="toggleAutoComplete"
+          >
+            前提タスクを自動完了：今OFF
+          </button>
+          <button
+            v-else
+            class="level-item button is-info"
+            @click="toggleAutoComplete"
+          >
+          前提タスクを自動完了：今ON
+          </button>
+          <button
             v-if="!displayDoneTasks"
             class="level-item button is-info is-light"
             @click="toggleDisplayDoneTask"
@@ -277,7 +291,8 @@ module.exports = {
       viewJaeger: true,
       viewLightkeeper: true,
       progressViewMode: 1,
-      searchText: ""
+      searchText: "",
+      autoComplete: false
     };
   },
   mounted() {
@@ -334,8 +349,24 @@ module.exports = {
     toggleDoneState: function (id) {
       const index = this.execList.findIndex((el) => el == id);
       if (index === -1) {
+        // 新規に完了した
         this.execList.push(id);
+        const doneTask = this.kappaRequireTasks.find((el) => el.id == id);
+        if (doneTask.taskRequirements.length > 0) {
+          // 前提タスクがあり、終わってなかった場合、DONEを付ける
+          doneTask.taskRequirements.forEach(requireInfo => {
+            // 受注しただけで発生するタスクとかは省きたい
+            if (requireInfo.status.length != 1 || requireInfo.status[0] != "complete") { return }
+
+            const requireTaskIndex = this.execList.findIndex((el) => el == requireInfo.task.id);
+            if (requireTaskIndex === -1) {
+              // 前提タスクが完了マークされてないので、マークする
+              this.toggleDoneState(requireInfo.task.id)
+            }
+          })
+        }
       } else {
+        // 完了から戻した
         this.execList.splice(index, 1);
       }
 
@@ -343,6 +374,9 @@ module.exports = {
     },
     toggleDisplayDoneTask: function () {
       this.displayDoneTasks = !this.displayDoneTasks;
+    },
+    toggleAutoComplete: function () {
+      this.autoComplete = !this.autoComplete;
     },
     resetExecTask: function () {
       // TODO: 確認メッセージ出す
