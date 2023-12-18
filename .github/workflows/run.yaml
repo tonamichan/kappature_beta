@@ -1,7 +1,7 @@
 name: fetch-task-job
-on: workflow_dispatch
-  # schedule: # ここは状況に応じて。[push]もよく使う
-  #   - cron: '0 1 * * *'
+on:
+  schedule: # ここは状況に応じて。[push]もよく使う
+    - cron: '0 1 * * *'
   
 jobs:
   fetch-task-job:
