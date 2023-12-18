@@ -144,17 +144,32 @@
 
               <div class="flex">
                 <div class="card-info-line">
-                  <a
-                    :href="generateWikiUrl(task)"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="has-text-link"
-                  >
-                    日本語wiki
-                    <span class="material-symbols-outlined google-icon">
-                      open_in_new
-                    </span>
-                  </a>
+                  <div class="card-link">
+                    <a
+                      :href="generateWikiUrl(task)"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="has-text-link"
+                    >
+                      日本語wiki
+                      <span class="material-symbols-outlined google-icon">
+                        open_in_new
+                      </span>
+                    </a>
+                  </div>
+                  <div class="card-link">
+                    <a
+                      :href="task.wikiLink"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="has-text-link"
+                    >
+                      英語wiki
+                      <span class="material-symbols-outlined google-icon">
+                        open_in_new
+                      </span>
+                    </a>
+                  </div>
                 </div>
                 <div class="done-button">
                   <button
@@ -242,18 +257,6 @@ module.exports = {
       tasks: [],
       execList: [],
       displayDoneTasks: false,
-      tradors: [
-        "Dummy",
-        "Prapor",
-        "Therapist",
-        "Fence",
-        "Skier",
-        "Peacekeeper",
-        "Mechanic",
-        "Ragman",
-        "Jaeger",
-        "Lightkeeper",
-      ],
       viewPrapor: true,
       viewTherapist: true,
       viewFence: true,
@@ -326,15 +329,11 @@ module.exports = {
       this.execList = []
       localStorage.execList = JSON.stringify(this.execList, undefined, 1);
     },
-    getPersonName: function (id) {
-      // トレーダーに振ったidと添字が一致するようにしてる
-      return this.tradors[id];
-    },
     generateWikiUrl: function (task) {
       // 末尾のハテナのはほぼWhat’s on the Flash Drive?用
       return (
         "https://wikiwiki.jp/eft/" +
-        this.getPersonName(task.owner) +
+        task.trader.name +
         "/" +
         task.name.replace(/[?]/g, "%3F")
       );
@@ -384,5 +383,8 @@ module.exports = {
 .progress-count {
   position: relative;
   bottom: 160px;
+}
+.card-link {
+  margin-right: 1rem;
 }
 </style>
