@@ -102,6 +102,16 @@
                 <div class="content">Jaeger</div>
               </div>
             </div>
+            <div class="search-form is-one-third">
+              <div>
+                <input
+                  v-model="searchText"
+                  class="input"
+                  type="text"
+                  placeholder="タスク検索"
+                />
+              </div>
+            </div>
           </div>
         </div>
         <div class="column side-menu has-background-warning">
@@ -131,7 +141,7 @@
     <div class="container">
       <div class="columns">
         <div class="column is-four-fifths task-list has-background-link">
-          <template v-for="task in displayTasks" :key="task.id">
+          <template v-for="task in filteredTasks" :key="task.id">
             <div class="box">
               <div class="card-name-line">
                 {{ task.name }}
@@ -267,6 +277,7 @@ module.exports = {
       viewJaeger: true,
       viewLightkeeper: true,
       progressViewMode: 1,
+      searchText: ""
     };
   },
   mounted() {
@@ -279,6 +290,15 @@ module.exports = {
     kappaRequireTasks: function () {
       tasks = this.tasks.filter((task) => task.kappaRequired);
       return tasks;
+    },
+    filteredTasks: function () {
+      if (this.searchText === "") {
+        return this.displayTasks;
+      }
+
+      return this.displayTasks.filter((task) =>
+        task.name.toLowerCase().includes(this.searchText)
+      );
     },
     displayTasks: function () {
       // 計算量注意
@@ -387,5 +407,10 @@ module.exports = {
 }
 .card-link {
   margin-right: 1rem;
+}
+.search-form {
+  margin-left: auto;
+  margin-top: auto;
+  padding: 2px;
 }
 </style>
