@@ -5,7 +5,7 @@
         <div class="column is-four-fifths has-background-danger">
           <div class="container flex">
             <div
-              class="card"
+              class="card trader-card"
               :class="{
                 'card-active': viewPrapor,
                 'has-background-grey': !viewPrapor,
@@ -17,7 +17,7 @@
               </div>
             </div>
             <div
-              class="card"
+              class="card trader-card"
               :class="{
                 'card-active': viewTherapist,
                 'has-background-grey': !viewTherapist,
@@ -29,7 +29,7 @@
               </div>
             </div>
             <div
-              class="card"
+              class="card trader-card"
               :class="{
                 'card-active': viewFence,
                 'has-background-grey': !viewFence,
@@ -41,7 +41,7 @@
               </div>
             </div>
             <div
-              class="card"
+              class="card trader-card"
               :class="{
                 'card-active': viewSkier,
                 'has-background-grey': !viewSkier,
@@ -55,7 +55,7 @@
           </div>
           <div class="container flex">
             <div
-              class="card"
+              class="card trader-card"
               :class="{
                 'card-active': viewPeacekeeper,
                 'has-background-grey': !viewPeacekeeper,
@@ -67,7 +67,7 @@
               </div>
             </div>
             <div
-              class="card"
+              class="card trader-card"
               :class="{
                 'card-active': viewMechanic,
                 'has-background-grey': !viewMechanic,
@@ -79,7 +79,7 @@
               </div>
             </div>
             <div
-              class="card"
+              class="card trader-card"
               :class="{
                 'card-active': viewRagman,
                 'has-background-grey': !viewRagman,
@@ -91,7 +91,7 @@
               </div>
             </div>
             <div
-              class="card"
+              class="card trader-card"
               :class="{
                 'card-active': viewJaeger,
                 'has-background-grey': !viewJaeger,
@@ -284,14 +284,14 @@ module.exports = {
       // 計算量注意
       tasks = this.kappaRequireTasks.filter((task) => {
         return (
-          (this.viewPrapor || task.owner !== 1) &&
-          (this.viewTherapist || task.owner !== 2) &&
-          (this.viewFence || task.owner !== 3) &&
-          (this.viewSkier || task.owner !== 4) &&
-          (this.viewPeacekeeper || task.owner !== 5) &&
-          (this.viewMechanic || task.owner !== 6) &&
-          (this.viewRagman || task.owner !== 7) &&
-          (this.viewJaeger || task.owner !== 8) &&
+          (this.viewPrapor || task.trader.name !== "Prapor") &&
+          (this.viewTherapist || task.trader.name !== "Therapist") &&
+          (this.viewFence || task.trader.name !== "Fence") &&
+          (this.viewSkier || task.trader.name !== "Skier") &&
+          (this.viewPeacekeeper || task.trader.name !== "Peacekeeper") &&
+          (this.viewMechanic || task.trader.name !== "Mechanic") &&
+          (this.viewRagman || task.trader.name !== "Ragman") &&
+          (this.viewJaeger || task.trader.name !== "Jaeger") &&
           (this.displayDoneTasks || !this.execList.includes(task.id))
         );
       });
@@ -371,8 +371,9 @@ module.exports = {
 .card-content {
   width: 8rem;
 }
-.card {
+.trader-card {
   margin: 2px;
+  cursor: pointer;
 }
 .box {
   margin-bottom: 0.5rem;
