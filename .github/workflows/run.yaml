@@ -2,6 +2,7 @@ name: myactions
 on: 
   schedule: # ここは状況に応じて。[push]もよく使う
     - cron: '0 1 * * *'
+  workflow_dispatch
 jobs:
   fetch-task-job:
     runs-on: ubuntu-latest
