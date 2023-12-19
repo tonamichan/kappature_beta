@@ -11,7 +11,17 @@
               ᴋᴀᴘᴘᴀᴛᴜʀᴇ ᴏɴ ʟᴋ
             </span>
           </div>
-          <div class="level-item title-info">Escape from Tarkovのアシストツールです</div>
+          <div class="level-item title-info">
+            Escape from Tarkovのアシストツールです。
+            <a
+                      href="https://twitter.com/tonami_ch"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="has-text-link"
+                    >
+              作者
+            </a>
+          </div>
         </div>
       </div>
       <div class="columns block">
@@ -222,56 +232,57 @@
         </div>
         <div
           class="column side-menu has-background-warning"
-          @click="changeProgressView()"
         >
-          <h3 class="title is-3">進捗率</h3>
-          <div style="transform: rotate(-90deg)">
-            <svg
-              height="100%"
-              viewBox="0 0 20 20"
-              width="100%"
-              style="overflow: visible"
+          <div @click="changeProgressView()">
+            <h3 class="title is-3">進捗率</h3>
+            <div style="transform: rotate(-90deg)">
+              <svg
+                height="100%"
+                viewBox="0 0 20 20"
+                width="100%"
+                style="overflow: visible"
+              >
+                <circle
+                  cx="50%"
+                  cy="50%"
+                  fill="none"
+                  stroke-width="2"
+                  r="9"
+                  stroke="#E6ECF0"
+                />
+                <circle
+                  cx="50%"
+                  cy="50%"
+                  fill="none"
+                  stroke-width="2"
+                  r="9"
+                  stroke="#1DA1F2"
+                  style="stroke-dasharray: 56.5487"
+                  :style="{ 'stroke-dashoffset': 56.5487 - progress * 0.565487 }"
+                />
+              </svg>
+            </div>
+            <p v-if="progressViewMode === 1" class="title is-1 progress-count">
+              {{ progress }}%
+            </p>
+            <p
+              v-else-if="progressViewMode === 2"
+              class="title is-1 progress-count"
             >
-              <circle
-                cx="50%"
-                cy="50%"
-                fill="none"
-                stroke-width="2"
-                r="9"
-                stroke="#E6ECF0"
-              />
-              <circle
-                cx="50%"
-                cy="50%"
-                fill="none"
-                stroke-width="2"
-                r="9"
-                stroke="#1DA1F2"
-                style="stroke-dasharray: 56.5487"
-                :style="{ 'stroke-dashoffset': 56.5487 - progress * 0.565487 }"
-              />
-            </svg>
+              <template v-if="displayKappaTasks">
+                {{ execListOfKappa.length }}/{{ kappaRequireTasks.length }}
+              </template>
+              <template v-else>
+                {{ execListOfLK.length }}/{{ LKRequireTasks.length }}
+              </template>
+            </p>
+            <button
+              class="button is-danger reset-button"
+              @click="openAllResetModal"
+            >
+              進捗をリセットする
+            </button>
           </div>
-          <p v-if="progressViewMode === 1" class="title is-1 progress-count">
-            {{ progress }}%
-          </p>
-          <p
-            v-else-if="progressViewMode === 2"
-            class="title is-1 progress-count"
-          >
-            <template v-if="displayKappaTasks">
-              {{ execListOfKappa.length }}/{{ kappaRequireTasks.length }}
-            </template>
-            <template v-else>
-              {{ execListOfLK.length }}/{{ LKRequireTasks.length }}
-            </template>
-          </p>
-          <button
-            class="button is-danger reset-button"
-            @click="openAllResetModal"
-          >
-            進捗をリセットする
-          </button>
         </div>
       </div>
     </div>
@@ -523,6 +534,7 @@ module.exports = {
 }
 .side-menu {
   text-align: center;
+  min-width: 250px;
 }
 .card-info-line {
   margin-right: auto;
@@ -579,7 +591,7 @@ module.exports = {
   border-bottom: 1px;
 }
 .block {
-  margin-bottom: 1rem;
+  margin-bottom: 0.7rem;
 }
 .section {
   padding: 2px;
@@ -593,5 +605,8 @@ module.exports = {
 .is-lk-mode {
   background-color: dimgray;
   color: white;
+}
+.reset-button {
+  margin-top: -48px;
 }
 </style>
