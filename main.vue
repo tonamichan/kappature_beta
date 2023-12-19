@@ -116,20 +116,6 @@
         </div>
         <div class="column side-menu has-background-warning">
           <button
-            v-if="!autoComplete"
-            class="level-item button is-info is-light"
-            @click="toggleAutoComplete"
-          >
-            前提タスクを自動完了：今OFF
-          </button>
-          <button
-            v-else
-            class="level-item button is-info"
-            @click="toggleAutoComplete"
-          >
-          前提タスクを自動完了：今ON
-          </button>
-          <button
             v-if="!displayDoneTasks"
             class="level-item button is-info is-light"
             @click="toggleDisplayDoneTask"
@@ -265,6 +251,25 @@
         </div>
       </div>
     </div>
+    <div class="modal" :class="{'is-active': requirementsCompleteModal}">
+      <div class="modal-background" @click="closeRequirementsCompleteModal"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">前提・関連タスク一覧</p>
+          <button class="delete" aria-label="close"  @click="closeRequirementsCompleteModal"></button>
+        </header>
+        <section class="modal-card-body">
+          <div v-for="task in RelatedUndoneTasks" :key="task.id">
+            <p class="is-size-5">{{ task.name }}</p>
+          </div>
+        </section>
+        <footer class="modal-card-foot">
+          <button class="button"  @click="closeRequirementsCompleteModal">キャンセル</button>
+          <button class="button is-success"  @click="modalExecute">自動でDONE!する</button>
+        </footer>
+      </div>
+      <button class="modal-close is-large" aria-label="close" @click="closeRequirementsCompleteModal"></button>
+    </div>
   </div>
 </template>
 
@@ -286,7 +291,8 @@ module.exports = {
       viewLightkeeper: true,
       progressViewMode: 1,
       searchText: "",
-      autoComplete: false
+      requirementsCompleteModal: false,
+      RelatedUndoneTasks: []
     };
   },
   mounted() {
@@ -347,17 +353,11 @@ module.exports = {
         this.execList.push(id);
         const doneTask = this.kappaRequireTasks.find((el) => el.id == id);
         if (doneTask.taskRequirements.length > 0) {
-          // 前提タスクがあり、終わってなかった場合、DONEを付ける
-          doneTask.taskRequirements.forEach(requireInfo => {
-            // 受注しただけで発生するタスクとかは省きたい
-            if (requireInfo.status.length != 1 || requireInfo.status[0] != "complete") { return }
-
-            const requireTaskIndex = this.execList.findIndex((el) => el == requireInfo.task.id);
-            if (requireTaskIndex === -1) {
-              // 前提タスクが完了マークされてないので、マークする
-              this.toggleDoneState(requireInfo.task.id)
-            }
-          })
+          // 前提タスク自動完了モーダルを用意してあげる
+          this.setRelatedUndoneTasks(doneTask)
+          if (this.RelatedUndoneTasks.length > 0) {
+            this.openRequirementsCompleteModal()
+          }
         }
       } else {
         // 完了から戻した
@@ -366,11 +366,50 @@ module.exports = {
 
       localStorage.execList = JSON.stringify(this.execList, undefined, 1);
     },
+    setRelatedUndoneTasks: function(task) {
+      // タスク自動完了モーダルのため、関連タスクを収集する
+      let tasks = []
+      this.digRequirementsTasks(task.id, tasks)
+      // 初動のタスクはDONEボタンの処理でDONEしているので省く
+      originalTaskIndex = tasks.findIndex((el) => el.id == task.id);
+      tasks.splice(originalTaskIndex, 1)
+      // 頑張っていい感じにソートする。限界はある。
+      this.RelatedUndoneTasks = tasks.sort((a, b) => {
+        if (a.minPlayerLevel !== b.minPlayerLevel) {
+          return (a.minPlayerLevel > b.minPlayerLevel) ? 1 : -1
+        }
+        return (a.name > b.name) ? 1 : -1
+      })
+    },
+    digRequirementsTasks: function(taskId, diggedTasks) {
+      // 再帰的にタスクを掘るための関数
+      const targetTask = this.tasks.find((el) => el.id == taskId);
+      if (!diggedTasks.includes(targetTask) && !this.execList.includes(targetTask.id)) {
+        // まだ掘ってなくて未完了のやつだけ集める
+        diggedTasks.push(targetTask)
+      }
+      targetTask.taskRequirements.forEach(requireInfo => {
+        this.digRequirementsTasks(requireInfo.task.id, diggedTasks)
+      })
+    },
+    autoDoneRelatedUndoneTasks: function() {
+      this.RelatedUndoneTasks.forEach((task) => {
+        this.execList.push(task.id)
+      })
+      localStorage.execList = JSON.stringify(this.execList, undefined, 1);
+    },
+    modalExecute: function() {
+      this.autoDoneRelatedUndoneTasks()
+      this.closeRequirementsCompleteModal()
+    },
     toggleDisplayDoneTask: function () {
       this.displayDoneTasks = !this.displayDoneTasks;
     },
-    toggleAutoComplete: function () {
-      this.autoComplete = !this.autoComplete;
+    openRequirementsCompleteModal: function () {
+      this.requirementsCompleteModal = true
+    },
+    closeRequirementsCompleteModal: function () {
+      this.requirementsCompleteModal = false
     },
     resetExecTask: function () {
       // TODO: 確認メッセージ出す
@@ -440,5 +479,8 @@ module.exports = {
   margin-left: auto;
   margin-top: auto;
   padding: 2px;
+}
+.modal-card-foot {
+  justify-content: flex-end;
 }
 </style>
