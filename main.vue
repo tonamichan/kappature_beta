@@ -255,17 +255,20 @@
       <div class="modal-background" @click="closeRequirementsCompleteModal"></div>
       <div class="modal-card">
         <header class="modal-card-head">
-          <p class="modal-card-title">前提・関連タスク一覧</p>
+          <p class="modal-card-title">前提・関連タスク</p>
           <button class="delete" aria-label="close"  @click="closeRequirementsCompleteModal"></button>
         </header>
         <section class="modal-card-body">
+          <div class="modal-card-body-info">
+            以下のタスクがUNDONEで残っています。<br/>一緒にDONE!しますか？
+          </div>
           <div v-for="task in RelatedUndoneTasks" :key="task.id">
             <p class="is-size-5">{{ task.name }}</p>
           </div>
         </section>
         <footer class="modal-card-foot">
           <button class="button"  @click="closeRequirementsCompleteModal">キャンセル</button>
-          <button class="button is-success"  @click="modalExecute">自動でDONE!する</button>
+          <button class="button is-success"  @click="modalExecute">DONE!する</button>
         </footer>
       </div>
       <button class="modal-close is-large" aria-label="close" @click="closeRequirementsCompleteModal"></button>
@@ -278,7 +281,7 @@
           <button class="delete" aria-label="close"  @click="closeAllResetModal"></button>
         </header>
         <section class="modal-card-body">
-          Kappa必要タスク・LightKeeper必要タスクを全部UNDONEします。
+          今までにDONE!したタスクを全てUNDONEします。<br/>
           よろしいですか？
         </section>
         <footer class="modal-card-foot">
@@ -507,5 +510,16 @@ module.exports = {
 }
 .modal-card-foot {
   justify-content: flex-end;
+  padding: 10px;
+}
+.modal-background {
+  background-color: rgba(10,10,10,.5)
+}
+.modal-card-body {
+  padding: 10px;
+}
+.modal-card-body-info {
+  padding-bottom: 8px;
+  border-bottom: 1px;
 }
 </style>
