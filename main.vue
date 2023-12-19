@@ -1,6 +1,19 @@
 <template>
-  <div class="section">
+  <div class="section" :class="{'is-lk-mode': !displayKappaTasks}">
     <div class="container block">
+      <div class="level">
+        <div class="level-left">
+          <div class="level-item is-size-3">
+            <span v-if="displayKappaTasks">
+              ᴋᴀᴘᴘᴀᴛᴜʀᴇ
+            </span>
+            <span v-else>
+              ᴋᴀᴘᴘᴀᴛᴜʀᴇ ᴏɴ ʟᴋ
+            </span>
+          </div>
+          <div class="level-item title-info">Escape from Tarkovのアシストツールです</div>
+        </div>
+      </div>
       <div class="columns block">
         <div class="column is-four-fifths has-background-danger">
           <div class="container flex">
@@ -115,26 +128,38 @@
           </div>
         </div>
         <div class="column side-menu has-background-warning">
-          <button
-            v-if="!displayDoneTasks"
-            class="level-item button is-info is-light"
-            @click="toggleDisplayDoneTask"
-          >
-            完了済を表示
-          </button>
-          <button
-            v-else
-            class="level-item button is-info"
-            @click="toggleDisplayDoneTask"
-          >
-            完了済を隠す
-          </button>
-          <button
-            class="level-item button is-danger"
-            @click="openAllResetModal"
-          >
-            進捗をリセットする
-          </button>
+          <div class="menu-button">
+            <button
+              v-if="displayKappaTasks"
+              class="level-item button is-dark"
+              @click="toggleDisplayKappaTasks"
+            >
+              LightKeeperモードにする
+            </button>
+            <button
+              v-else
+              class="level-item button is-primary"
+              @click="toggleDisplayKappaTasks"
+            >
+              Kappaモードにする
+            </button>
+          </div>
+          <div class="menu-button">
+            <button
+              v-if="!displayDoneTasks"
+              class="level-item button is-info is-light"
+              @click="toggleDisplayDoneTask"
+            >
+              完了済を表示
+            </button>
+            <button
+              v-else
+              class="level-item button is-info"
+              @click="toggleDisplayDoneTask"
+            >
+              完了済を隠す
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -234,20 +259,19 @@
             v-else-if="progressViewMode === 2"
             class="title is-1 progress-count"
           >
-            {{ execList.length }}/{{ kappaRequireTasks.length }}
+            <template v-if="displayKappaTasks">
+              {{ execListOfKappa.length }}/{{ kappaRequireTasks.length }}
+            </template>
+            <template v-else>
+              {{ execListOfLK.length }}/{{ LKRequireTasks.length }}
+            </template>
           </p>
-          <a
-            target="_blank"
-            href="https://twitter.com/share?ref_src=twsrc%5Etfw"
-            class="twitter-share-button"
-            data-size="large"
-            :data-text="tweetText"
-            data-url="https://tonamichan.github.io/kappa_chan/"
-            data-hashtags="トナちゃんツール"
-            data-dnt="true"
-            data-show-count="false"
-            >進捗を共有する</a
+          <button
+            class="button is-danger reset-button"
+            @click="openAllResetModal"
           >
+            進捗をリセットする
+          </button>
         </div>
       </div>
     </div>
@@ -314,6 +338,7 @@ module.exports = {
       searchText: "",
       requirementsCompleteModal: false,
       allResetModal: false,
+      displayKappaTasks: true,
       RelatedUndoneTasks: []
     };
   },
@@ -328,6 +353,10 @@ module.exports = {
       tasks = this.tasks.filter((task) => task.kappaRequired);
       return tasks;
     },
+    LKRequireTasks: function () {
+      tasks = this.tasks.filter((task) => task.lightkeeperRequired);
+      return tasks;
+    },
     filteredTasks: function () {
       if (this.searchText === "") {
         return this.displayTasks;
@@ -339,28 +368,52 @@ module.exports = {
     },
     displayTasks: function () {
       // 計算量注意
-      tasks = this.kappaRequireTasks.filter((task) => {
-        return (
-          (this.viewPrapor || task.trader.name !== "Prapor") &&
-          (this.viewTherapist || task.trader.name !== "Therapist") &&
-          (this.viewFence || task.trader.name !== "Fence") &&
-          (this.viewSkier || task.trader.name !== "Skier") &&
-          (this.viewPeacekeeper || task.trader.name !== "Peacekeeper") &&
-          (this.viewMechanic || task.trader.name !== "Mechanic") &&
-          (this.viewRagman || task.trader.name !== "Ragman") &&
-          (this.viewJaeger || task.trader.name !== "Jaeger") &&
-          (this.displayDoneTasks || !this.execList.includes(task.id))
-        );
-      });
+      if (this.displayKappaTasks) {
+        tasks = this.kappaRequireTasks.filter((task) => {
+          return (
+            (this.viewPrapor || task.trader.name !== "Prapor") &&
+            (this.viewTherapist || task.trader.name !== "Therapist") &&
+            (this.viewFence || task.trader.name !== "Fence") &&
+            (this.viewSkier || task.trader.name !== "Skier") &&
+            (this.viewPeacekeeper || task.trader.name !== "Peacekeeper") &&
+            (this.viewMechanic || task.trader.name !== "Mechanic") &&
+            (this.viewRagman || task.trader.name !== "Ragman") &&
+            (this.viewJaeger || task.trader.name !== "Jaeger") &&
+            (this.displayDoneTasks || !this.execList.includes(task.id))
+          );
+        });
+      } else {
+        tasks = this.LKRequireTasks.filter((task) => {
+          return (
+            (this.viewPrapor || task.trader.name !== "Prapor") &&
+            (this.viewTherapist || task.trader.name !== "Therapist") &&
+            (this.viewFence || task.trader.name !== "Fence") &&
+            (this.viewSkier || task.trader.name !== "Skier") &&
+            (this.viewPeacekeeper || task.trader.name !== "Peacekeeper") &&
+            (this.viewMechanic || task.trader.name !== "Mechanic") &&
+            (this.viewRagman || task.trader.name !== "Ragman") &&
+            (this.viewJaeger || task.trader.name !== "Jaeger") &&
+            (this.displayDoneTasks || !this.execList.includes(task.id))
+          );
+        })
+      }
       return tasks;
     },
+    execListOfKappa: function () {
+      return this.execList.filter((taskId) => this.kappaRequireTasks.some((task) => task.id === taskId))
+    },
+    execListOfLK: function () {
+      return this.execList.filter((taskId) => this.LKRequireTasks.some((task) => task.id === taskId))
+},
     progress: function () {
-      per = this.execList.length / this.kappaRequireTasks.length;
+      per = 0
+      if (this.displayKappaTasks) {
+        per = this.execList.length / this.kappaRequireTasks.length;
+      } else {
+        per = this.execList.length / this.LKRequireTasks.length;
+      }
       return isNaN(per) ? 0 : Math.floor(100 * per);
-    },
-    tweetText: function () {
-      return `うおお！Kappa必須タスクが${this.progress}%終わったよ！`;
-    },
+    }
   },
   methods: {
     setTaskData: function() {
@@ -426,6 +479,9 @@ module.exports = {
     },
     toggleDisplayDoneTask: function () {
       this.displayDoneTasks = !this.displayDoneTasks;
+    },
+    toggleDisplayKappaTasks: function () {
+      this.displayKappaTasks = !this.displayKappaTasks;
     },
     openRequirementsCompleteModal: function () {
       this.requirementsCompleteModal = true
@@ -521,5 +577,21 @@ module.exports = {
 .modal-card-body-info {
   padding-bottom: 8px;
   border-bottom: 1px;
+}
+.block {
+  margin-bottom: 1rem;
+}
+.section {
+  padding: 2px;
+}
+.title-info {
+  margin-top: 13px;
+}
+.menu-button {
+  margin-bottom: 8px;
+}
+.is-lk-mode {
+  background-color: dimgray;
+  color: white;
 }
 </style>
