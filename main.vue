@@ -131,7 +131,7 @@
           </button>
           <button
             class="level-item button is-danger"
-            @click="resetExecTask"
+            @click="openAllResetModal"
           >
             進捗をリセットする
           </button>
@@ -270,6 +270,24 @@
       </div>
       <button class="modal-close is-large" aria-label="close" @click="closeRequirementsCompleteModal"></button>
     </div>
+    <div class="modal" :class="{'is-active': allResetModal}">
+      <div class="modal-background" @click="closeAllResetModal"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">全ての進捗をリセット</p>
+          <button class="delete" aria-label="close"  @click="closeAllResetModal"></button>
+        </header>
+        <section class="modal-card-body">
+          Kappa必要タスク・LightKeeper必要タスクを全部UNDONEします。
+          よろしいですか？
+        </section>
+        <footer class="modal-card-foot">
+          <button class="button"  @click="closeAllResetModal">キャンセル</button>
+          <button class="button is-danger"  @click="resetExecTask">やってくれ</button>
+        </footer>
+      </div>
+      <button class="modal-close is-large" aria-label="close" @click="closeAllResetModal"></button>
+    </div>
   </div>
 </template>
 
@@ -292,6 +310,7 @@ module.exports = {
       progressViewMode: 1,
       searchText: "",
       requirementsCompleteModal: false,
+      allResetModal: false,
       RelatedUndoneTasks: []
     };
   },
@@ -411,10 +430,16 @@ module.exports = {
     closeRequirementsCompleteModal: function () {
       this.requirementsCompleteModal = false
     },
+    openAllResetModal: function () {
+      this.allResetModal = true
+    },
+    closeAllResetModal: function () {
+      this.allResetModal = false
+    },
     resetExecTask: function () {
-      // TODO: 確認メッセージ出す
       this.execList = []
       localStorage.execList = JSON.stringify(this.execList, undefined, 1);
+      this.closeAllResetModal()
     },
     generateWikiUrl: function (task) {
       // 末尾のハテナのはほぼWhat’s on the Flash Drive?用
