@@ -8,7 +8,6 @@ const router = new VueRouter({
   ],
 });
 
-// point.1 Vueインスタンスの作成
 const app = new Vue({
   el: "#app",
   components: {
