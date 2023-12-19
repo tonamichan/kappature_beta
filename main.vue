@@ -233,9 +233,9 @@
         <div
           class="column side-menu has-background-warning"
         >
-          <div @click="changeProgressView()">
+          <div>
             <h3 class="title is-3">進捗率</h3>
-            <div style="transform: rotate(-90deg)">
+            <div style="transform: rotate(-90deg)" @click="changeProgressView()">
               <svg
                 height="100%"
                 viewBox="0 0 20 20"
@@ -262,12 +262,13 @@
                 />
               </svg>
             </div>
-            <p v-if="progressViewMode === 1" class="title is-1 progress-count">
+            <p v-if="progressViewMode === 1" class="title is-1 progress-count" @click="changeProgressView()">
               {{ progress }}%
             </p>
             <p
               v-else-if="progressViewMode === 2"
               class="title is-1 progress-count"
+              @click="changeProgressView()"
             >
               <template v-if="displayKappaTasks">
                 {{ execListOfKappa.length }}/{{ kappaRequireTasks.length }}
