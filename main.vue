@@ -159,13 +159,7 @@
             <div class="box">
               <div class="card-name-line">
                 {{ task.name }}
-                <!-- <div v-if="task.difficulty === 5" class="icon-on-card">
-                  <span class="material-symbols-outlined">
-                    skull
-                  </span>
-                </div> -->
               </div>
-
               <div class="flex">
                 <div class="card-info-line">
                   <div class="card-link">
