@@ -1,8 +1,8 @@
 <template>
-  <div class="section" :class="{'is-lk-mode': !displayKappaTasks}">
+  <div class="section" :class="{'is-lk-section': !displayKappaTasks}">
     <div class="container block">
       <div class="level">
-        <div class="level-left">
+        <div class="level-left" :class="{'is-lk-title': !displayKappaTasks}">
           <div class="level-item is-size-3">
             <span v-if="displayKappaTasks">
               ᴋᴀᴘᴘᴀᴛᴜʀᴇ
@@ -603,8 +603,10 @@ module.exports = {
 .menu-button {
   margin-bottom: 8px;
 }
-.is-lk-mode {
+.is-lk-section {
   background-color: dimgray;
+}
+.is-lk-title {
   color: white;
 }
 .reset-button {
