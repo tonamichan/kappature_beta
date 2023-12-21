@@ -1,6 +1,5 @@
 // point.2 vue-router のルーティング
 const router = new VueRouter({
-  mode: 'history',
   routes: [
     {
       path: "/",
