@@ -176,8 +176,8 @@
     <div class="container">
       <div class="columns">
         <div class="column is-four-fifths task-list has-background-link">
-          <template v-for="task in filteredTasks" :key="task.id">
-            <div class="box">
+          <transition-group name="fade" tag="div">
+            <div v-for="task in filteredTasks" :key="task.id" class="box">
               <div class="card-name-line">
                 {{ task.name }}
               </div>
@@ -228,7 +228,7 @@
                 </div>
               </div>
             </div>
-          </template>
+          </transition-group>
         </div>
         <div
           class="column side-menu has-background-warning"
@@ -611,5 +611,16 @@ module.exports = {
 }
 .reset-button {
   margin-top: -48px;
+}
+.fade-move, /* 移動する要素にトランジションを適用 */
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+  transform: translateX(200px);
 }
 </style>
