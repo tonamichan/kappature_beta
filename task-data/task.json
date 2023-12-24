@@ -1173,7 +1173,7 @@
         },
         {
             "id": "639872f9decada40426d3447",
-            "tarkovDataId": null,
+            "tarkovDataId": 85,
             "name": "Gunsmith - Part 4",
             "trader": {
                 "name": "Mechanic"
@@ -1350,7 +1350,7 @@
         },
         {
             "id": "5ae3267986f7742a413592fe",
-            "tarkovDataId": 88,
+            "tarkovDataId": 86,
             "name": "Gunsmith - Part 5",
             "trader": {
                 "name": "Mechanic"
@@ -2693,7 +2693,7 @@
         },
         {
             "id": "5ae3270f86f77445ba41d4dd",
-            "tarkovDataId": 89,
+            "tarkovDataId": 87,
             "name": "Gunsmith - Part 6",
             "trader": {
                 "name": "Mechanic"
@@ -3393,7 +3393,7 @@
         },
         {
             "id": "6179afd0bca27a099552e040",
-            "tarkovDataId": null,
+            "tarkovDataId": 241,
             "name": "Lost Contact",
             "trader": {
                 "name": "Therapist"
@@ -3514,7 +3514,7 @@
         },
         {
             "id": "5ae3277186f7745973054106",
-            "tarkovDataId": 90,
+            "tarkovDataId": 89,
             "name": "Gunsmith - Part 8",
             "trader": {
                 "name": "Mechanic"
@@ -4016,7 +4016,7 @@
         },
         {
             "id": "639872fa9b4fb827b200d8e5",
-            "tarkovDataId": null,
+            "tarkovDataId": 90,
             "name": "Gunsmith - Part 9",
             "trader": {
                 "name": "Mechanic"
@@ -4755,7 +4755,7 @@
         },
         {
             "id": "639872fc93ae507d5858c3a6",
-            "tarkovDataId": null,
+            "tarkovDataId": 92,
             "name": "Gunsmith - Part 11",
             "trader": {
                 "name": "Mechanic"
@@ -4974,7 +4974,7 @@
         },
         {
             "id": "5b47799d86f7746c5d6a5fd8",
-            "tarkovDataId": 94,
+            "tarkovDataId": 93,
             "name": "Gunsmith - Part 12",
             "trader": {
                 "name": "Mechanic"
@@ -5615,7 +5615,7 @@
         },
         {
             "id": "639872fe8871e1272b10ccf6",
-            "tarkovDataId": null,
+            "tarkovDataId": 95,
             "name": "Gunsmith - Part 14",
             "trader": {
                 "name": "Mechanic"
@@ -7264,7 +7264,7 @@
         },
         {
             "id": "626bdcc3a371ee3a7a3514c5",
-            "tarkovDataId": null,
+            "tarkovDataId": 247,
             "name": "Stray Dogs",
             "trader": {
                 "name": "Jaeger"
@@ -7769,7 +7769,7 @@
         },
         {
             "id": "5e383a6386f77465910ce1f3",
-            "tarkovDataId": null,
+            "tarkovDataId": 182,
             "name": "Textile - Part 1",
             "trader": {
                 "name": "Ragman"
@@ -7817,7 +7817,7 @@
         },
         {
             "id": "5e4d515e86f77438b2195244",
-            "tarkovDataId": null,
+            "tarkovDataId": 183,
             "name": "Textile - Part 2",
             "trader": {
                 "name": "Ragman"
