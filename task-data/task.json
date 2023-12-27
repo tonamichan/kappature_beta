@@ -1148,6 +1148,30 @@
             "lightkeeperRequired": true
         },
         {
+            "id": "5967725e86f774601a446662",
+            "tarkovDataId": 8,
+            "name": "Shaking up the Teller",
+            "trader": {
+                "name": "Prapor"
+            },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Shaking_up_the_Teller",
+            "minPlayerLevel": 9,
+            "taskRequirements": [
+                {
+                    "task": {
+                        "id": "59675d6c86f7740a842fc482",
+                        "name": "Ice Cream Cones"
+                    },
+                    "status": [
+                        "complete"
+                    ]
+                }
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": true
+        },
+        {
             "id": "5a27d2af86f7744e1115b323",
             "tarkovDataId": 47,
             "name": "Friend from the West - Part 2",
@@ -2658,6 +2682,31 @@
             "lightkeeperRequired": false
         },
         {
+            "id": "600302d73b897b11364cd161",
+            "tarkovDataId": 198,
+            "name": "Hunter",
+            "trader": {
+                "name": "Jaeger"
+            },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Hunter",
+            "minPlayerLevel": 13,
+            "taskRequirements": [
+                {
+                    "task": {
+                        "id": "5d25e2ee86f77443e35162ea",
+                        "name": "The Huntsman Path - Woods Keeper"
+                    },
+                    "status": [
+                        "active",
+                        "complete"
+                    ]
+                }
+            ],
+            "factionName": "Any",
+            "kappaRequired": false,
+            "lightkeeperRequired": false
+        },
+        {
             "id": "5d25e2ee86f77443e35162ea",
             "tarkovDataId": 165,
             "name": "The Huntsman Path - Woods Keeper",
@@ -3101,30 +3150,6 @@
             "lightkeeperRequired": true
         },
         {
-            "id": "5967725e86f774601a446662",
-            "tarkovDataId": 8,
-            "name": "Shaking up the Teller",
-            "trader": {
-                "name": "Prapor"
-            },
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Shaking_up_the_Teller",
-            "minPlayerLevel": 15,
-            "taskRequirements": [
-                {
-                    "task": {
-                        "id": "59675d6c86f7740a842fc482",
-                        "name": "Ice Cream Cones"
-                    },
-                    "status": [
-                        "complete"
-                    ]
-                }
-            ],
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": true
-        },
-        {
             "id": "60896e28e4a85c72ef3fa301",
             "tarkovDataId": 203,
             "name": "Disease History",
@@ -3343,6 +3368,150 @@
             "lightkeeperRequired": false
         },
         {
+            "id": "5ae448bf86f7744d733e55ee",
+            "tarkovDataId": 122,
+            "name": "Make ULTRA Great Again",
+            "trader": {
+                "name": "Ragman"
+            },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Make_ULTRA_Great_Again",
+            "minPlayerLevel": 15,
+            "taskRequirements": [
+                {
+                    "task": {
+                        "id": "5ae448a386f7744d3730fff0",
+                        "name": "Only Business"
+                    },
+                    "status": [
+                        "complete"
+                    ]
+                }
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": true
+        },
+        {
+            "id": "5ae448e586f7744dcf0c2a67",
+            "tarkovDataId": 112,
+            "name": "Big Sale",
+            "trader": {
+                "name": "Ragman"
+            },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Big_Sale",
+            "minPlayerLevel": 15,
+            "taskRequirements": [
+                {
+                    "task": {
+                        "id": "5ae448a386f7744d3730fff0",
+                        "name": "Only Business"
+                    },
+                    "status": [
+                        "complete"
+                    ]
+                }
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": true
+        },
+        {
+            "id": "5ae4490786f7744ca822adcc",
+            "tarkovDataId": 114,
+            "name": "Dressed to Kill",
+            "trader": {
+                "name": "Ragman"
+            },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Dressed_to_Kill",
+            "minPlayerLevel": 15,
+            "taskRequirements": [
+                {
+                    "task": {
+                        "id": "5ae448f286f77448d73c0131",
+                        "name": "The Blood of War - Part 1"
+                    },
+                    "status": [
+                        "complete"
+                    ]
+                }
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": false
+        },
+        {
+            "id": "5ae4493d86f7744b8e15aa8f",
+            "tarkovDataId": 116,
+            "name": "Database - Part 2",
+            "trader": {
+                "name": "Ragman"
+            },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Database_-_Part_2",
+            "minPlayerLevel": 15,
+            "taskRequirements": [
+                {
+                    "task": {
+                        "id": "5ae4493486f7744efa289417",
+                        "name": "Database - Part 1"
+                    },
+                    "status": [
+                        "complete"
+                    ]
+                }
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": true
+        },
+        {
+            "id": "608974af4b05530f55550c21",
+            "tarkovDataId": 209,
+            "name": "Inventory Check",
+            "trader": {
+                "name": "Ragman"
+            },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Inventory_Check",
+            "minPlayerLevel": 15,
+            "taskRequirements": [
+                {
+                    "task": {
+                        "id": "608974d01a66564e74191fc0",
+                        "name": "A Fuel Matter"
+                    },
+                    "status": [
+                        "complete"
+                    ]
+                }
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": false
+        },
+        {
+            "id": "608974d01a66564e74191fc0",
+            "tarkovDataId": 204,
+            "name": "A Fuel Matter",
+            "trader": {
+                "name": "Ragman"
+            },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/A_Fuel_Matter",
+            "minPlayerLevel": 15,
+            "taskRequirements": [
+                {
+                    "task": {
+                        "id": "5ae448f286f77448d73c0131",
+                        "name": "The Blood of War - Part 1"
+                    },
+                    "status": [
+                        "complete"
+                    ]
+                }
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": false
+        },
+        {
             "id": "64ee9df4496db64f9b7a4432",
             "tarkovDataId": null,
             "name": "The Door",
@@ -3390,6 +3559,129 @@
             "factionName": "Any",
             "kappaRequired": false,
             "lightkeeperRequired": false
+        },
+        {
+            "id": "5ae448f286f77448d73c0131",
+            "tarkovDataId": 113,
+            "name": "The Blood of War - Part 1",
+            "trader": {
+                "name": "Ragman"
+            },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/The_Blood_of_War_-_Part_1",
+            "minPlayerLevel": 15,
+            "taskRequirements": [
+                {
+                    "task": {
+                        "id": "5ae448e586f7744dcf0c2a67",
+                        "name": "Big Sale"
+                    },
+                    "status": [
+                        "complete"
+                    ]
+                },
+                {
+                    "task": {
+                        "id": "5ae448bf86f7744d733e55ee",
+                        "name": "Make ULTRA Great Again"
+                    },
+                    "status": [
+                        "complete"
+                    ]
+                }
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": true
+        },
+        {
+            "id": "5ae4493486f7744efa289417",
+            "tarkovDataId": 115,
+            "name": "Database - Part 1",
+            "trader": {
+                "name": "Ragman"
+            },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Database_-_Part_1",
+            "minPlayerLevel": 15,
+            "taskRequirements": [
+                {
+                    "task": {
+                        "id": "5ae448e586f7744dcf0c2a67",
+                        "name": "Big Sale"
+                    },
+                    "status": [
+                        "complete"
+                    ]
+                },
+                {
+                    "task": {
+                        "id": "5ae448bf86f7744d733e55ee",
+                        "name": "Make ULTRA Great Again"
+                    },
+                    "status": [
+                        "complete"
+                    ]
+                }
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": true
+        },
+        {
+            "id": "5ae449b386f77446d8741719",
+            "tarkovDataId": 117,
+            "name": "Gratitude",
+            "trader": {
+                "name": "Ragman"
+            },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Gratitude",
+            "minPlayerLevel": 15,
+            "taskRequirements": [
+                {
+                    "task": {
+                        "id": "5ae4490786f7744ca822adcc",
+                        "name": "Dressed to Kill"
+                    },
+                    "status": [
+                        "complete"
+                    ]
+                },
+                {
+                    "task": {
+                        "id": "5ae4493d86f7744b8e15aa8f",
+                        "name": "Database - Part 2"
+                    },
+                    "status": [
+                        "complete"
+                    ]
+                }
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": false
+        },
+        {
+            "id": "59c50a9e86f7745fef66f4ff",
+            "tarkovDataId": 13,
+            "name": "The Punisher - Part 1",
+            "trader": {
+                "name": "Prapor"
+            },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/The_Punisher_-_Part_1",
+            "minPlayerLevel": 17,
+            "taskRequirements": [
+                {
+                    "task": {
+                        "id": "5967725e86f774601a446662",
+                        "name": "Shaking up the Teller"
+                    },
+                    "status": [
+                        "complete"
+                    ]
+                }
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": true
         },
         {
             "id": "6179afd0bca27a099552e040",
@@ -3489,30 +3781,6 @@
             "lightkeeperRequired": false
         },
         {
-            "id": "59c50a9e86f7745fef66f4ff",
-            "tarkovDataId": 13,
-            "name": "The Punisher - Part 1",
-            "trader": {
-                "name": "Prapor"
-            },
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/The_Punisher_-_Part_1",
-            "minPlayerLevel": 17,
-            "taskRequirements": [
-                {
-                    "task": {
-                        "id": "5967725e86f774601a446662",
-                        "name": "Shaking up the Teller"
-                    },
-                    "status": [
-                        "complete"
-                    ]
-                }
-            ],
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": true
-        },
-        {
             "id": "5ae3277186f7745973054106",
             "tarkovDataId": 89,
             "name": "Gunsmith - Part 8",
@@ -3526,54 +3794,6 @@
                     "task": {
                         "id": "5ac244eb86f7741356335af1",
                         "name": "Gunsmith - Part 7"
-                    },
-                    "status": [
-                        "complete"
-                    ]
-                }
-            ],
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": true
-        },
-        {
-            "id": "5ae448bf86f7744d733e55ee",
-            "tarkovDataId": 122,
-            "name": "Make ULTRA Great Again",
-            "trader": {
-                "name": "Ragman"
-            },
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Make_ULTRA_Great_Again",
-            "minPlayerLevel": 17,
-            "taskRequirements": [
-                {
-                    "task": {
-                        "id": "5ae448a386f7744d3730fff0",
-                        "name": "Only Business"
-                    },
-                    "status": [
-                        "complete"
-                    ]
-                }
-            ],
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": true
-        },
-        {
-            "id": "5ae448e586f7744dcf0c2a67",
-            "tarkovDataId": 112,
-            "name": "Big Sale",
-            "trader": {
-                "name": "Ragman"
-            },
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Big_Sale",
-            "minPlayerLevel": 17,
-            "taskRequirements": [
-                {
-                    "task": {
-                        "id": "5ae448a386f7744d3730fff0",
-                        "name": "Only Business"
                     },
                     "status": [
                         "complete"
@@ -3631,102 +3851,6 @@
             ],
             "factionName": "Any",
             "kappaRequired": false,
-            "lightkeeperRequired": false
-        },
-        {
-            "id": "5ae4490786f7744ca822adcc",
-            "tarkovDataId": 114,
-            "name": "Dressed to Kill",
-            "trader": {
-                "name": "Ragman"
-            },
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Dressed_to_Kill",
-            "minPlayerLevel": 17,
-            "taskRequirements": [
-                {
-                    "task": {
-                        "id": "5ae448f286f77448d73c0131",
-                        "name": "The Blood of War - Part 1"
-                    },
-                    "status": [
-                        "complete"
-                    ]
-                }
-            ],
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": false
-        },
-        {
-            "id": "5ae4493d86f7744b8e15aa8f",
-            "tarkovDataId": 116,
-            "name": "Database - Part 2",
-            "trader": {
-                "name": "Ragman"
-            },
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Database_-_Part_2",
-            "minPlayerLevel": 17,
-            "taskRequirements": [
-                {
-                    "task": {
-                        "id": "5ae4493486f7744efa289417",
-                        "name": "Database - Part 1"
-                    },
-                    "status": [
-                        "complete"
-                    ]
-                }
-            ],
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": true
-        },
-        {
-            "id": "608974af4b05530f55550c21",
-            "tarkovDataId": 209,
-            "name": "Inventory Check",
-            "trader": {
-                "name": "Ragman"
-            },
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Inventory_Check",
-            "minPlayerLevel": 17,
-            "taskRequirements": [
-                {
-                    "task": {
-                        "id": "608974d01a66564e74191fc0",
-                        "name": "A Fuel Matter"
-                    },
-                    "status": [
-                        "complete"
-                    ]
-                }
-            ],
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": false
-        },
-        {
-            "id": "608974d01a66564e74191fc0",
-            "tarkovDataId": 204,
-            "name": "A Fuel Matter",
-            "trader": {
-                "name": "Ragman"
-            },
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/A_Fuel_Matter",
-            "minPlayerLevel": 17,
-            "taskRequirements": [
-                {
-                    "task": {
-                        "id": "5ae448f286f77448d73c0131",
-                        "name": "The Blood of War - Part 1"
-                    },
-                    "status": [
-                        "complete"
-                    ]
-                }
-            ],
-            "factionName": "Any",
-            "kappaRequired": true,
             "lightkeeperRequired": false
         },
         {
@@ -3817,105 +3941,6 @@
             ],
             "factionName": "Any",
             "kappaRequired": false,
-            "lightkeeperRequired": false
-        },
-        {
-            "id": "5ae448f286f77448d73c0131",
-            "tarkovDataId": 113,
-            "name": "The Blood of War - Part 1",
-            "trader": {
-                "name": "Ragman"
-            },
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/The_Blood_of_War_-_Part_1",
-            "minPlayerLevel": 17,
-            "taskRequirements": [
-                {
-                    "task": {
-                        "id": "5ae448e586f7744dcf0c2a67",
-                        "name": "Big Sale"
-                    },
-                    "status": [
-                        "complete"
-                    ]
-                },
-                {
-                    "task": {
-                        "id": "5ae448bf86f7744d733e55ee",
-                        "name": "Make ULTRA Great Again"
-                    },
-                    "status": [
-                        "complete"
-                    ]
-                }
-            ],
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": true
-        },
-        {
-            "id": "5ae4493486f7744efa289417",
-            "tarkovDataId": 115,
-            "name": "Database - Part 1",
-            "trader": {
-                "name": "Ragman"
-            },
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Database_-_Part_1",
-            "minPlayerLevel": 17,
-            "taskRequirements": [
-                {
-                    "task": {
-                        "id": "5ae448e586f7744dcf0c2a67",
-                        "name": "Big Sale"
-                    },
-                    "status": [
-                        "complete"
-                    ]
-                },
-                {
-                    "task": {
-                        "id": "5ae448bf86f7744d733e55ee",
-                        "name": "Make ULTRA Great Again"
-                    },
-                    "status": [
-                        "complete"
-                    ]
-                }
-            ],
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": true
-        },
-        {
-            "id": "5ae449b386f77446d8741719",
-            "tarkovDataId": 117,
-            "name": "Gratitude",
-            "trader": {
-                "name": "Ragman"
-            },
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Gratitude",
-            "minPlayerLevel": 17,
-            "taskRequirements": [
-                {
-                    "task": {
-                        "id": "5ae4490786f7744ca822adcc",
-                        "name": "Dressed to Kill"
-                    },
-                    "status": [
-                        "complete"
-                    ]
-                },
-                {
-                    "task": {
-                        "id": "5ae4493d86f7744b8e15aa8f",
-                        "name": "Database - Part 2"
-                    },
-                    "status": [
-                        "complete"
-                    ]
-                }
-            ],
-            "factionName": "Any",
-            "kappaRequired": true,
             "lightkeeperRequired": false
         },
         {
@@ -4472,30 +4497,6 @@
             "lightkeeperRequired": false
         },
         {
-            "id": "5edab736cc183c769d778bc2",
-            "tarkovDataId": 185,
-            "name": "Colleagues - Part 1",
-            "trader": {
-                "name": "Therapist"
-            },
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Colleagues_-_Part_1",
-            "minPlayerLevel": 21,
-            "taskRequirements": [
-                {
-                    "task": {
-                        "id": "596a1e6c86f7741ddc2d3206",
-                        "name": "General Wares"
-                    },
-                    "status": [
-                        "complete"
-                    ]
-                }
-            ],
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": false
-        },
-        {
             "id": "5eda19f0edce541157209cee",
             "tarkovDataId": 184,
             "name": "Anesthesia",
@@ -4509,6 +4510,30 @@
                     "task": {
                         "id": "5967725e86f774601a446662",
                         "name": "Shaking up the Teller"
+                    },
+                    "status": [
+                        "complete"
+                    ]
+                }
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": false
+        },
+        {
+            "id": "5edab736cc183c769d778bc2",
+            "tarkovDataId": 185,
+            "name": "Colleagues - Part 1",
+            "trader": {
+                "name": "Therapist"
+            },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Colleagues_-_Part_1",
+            "minPlayerLevel": 21,
+            "taskRequirements": [
+                {
+                    "task": {
+                        "id": "596a1e6c86f7741ddc2d3206",
+                        "name": "General Wares"
                     },
                     "status": [
                         "complete"
@@ -5317,6 +5342,102 @@
             ],
             "factionName": "Any",
             "kappaRequired": true,
+            "lightkeeperRequired": false
+        },
+        {
+            "id": "5e381b0286f77420e3417a74",
+            "tarkovDataId": 182,
+            "name": "Textile - Part 1",
+            "trader": {
+                "name": "Ragman"
+            },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Textile_-_Part_1",
+            "minPlayerLevel": 25,
+            "taskRequirements": [
+                {
+                    "task": {
+                        "id": "5ae4497b86f7744cf402ed00",
+                        "name": "Sew it Good - Part 4"
+                    },
+                    "status": [
+                        "complete"
+                    ]
+                }
+            ],
+            "factionName": "USEC",
+            "kappaRequired": false,
+            "lightkeeperRequired": false
+        },
+        {
+            "id": "5e383a6386f77465910ce1f3",
+            "tarkovDataId": 182,
+            "name": "Textile - Part 1",
+            "trader": {
+                "name": "Ragman"
+            },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Textile_-_Part_1",
+            "minPlayerLevel": 25,
+            "taskRequirements": [
+                {
+                    "task": {
+                        "id": "5ae4497b86f7744cf402ed00",
+                        "name": "Sew it Good - Part 4"
+                    },
+                    "status": [
+                        "complete"
+                    ]
+                }
+            ],
+            "factionName": "BEAR",
+            "kappaRequired": false,
+            "lightkeeperRequired": false
+        },
+        {
+            "id": "5e4d4ac186f774264f758336",
+            "tarkovDataId": 183,
+            "name": "Textile - Part 2",
+            "trader": {
+                "name": "Ragman"
+            },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Textile_-_Part_2",
+            "minPlayerLevel": 25,
+            "taskRequirements": [
+                {
+                    "task": {
+                        "id": "5e381b0286f77420e3417a74",
+                        "name": "Textile - Part 1"
+                    },
+                    "status": [
+                        "complete"
+                    ]
+                }
+            ],
+            "factionName": "USEC",
+            "kappaRequired": false,
+            "lightkeeperRequired": false
+        },
+        {
+            "id": "5e4d515e86f77438b2195244",
+            "tarkovDataId": 183,
+            "name": "Textile - Part 2",
+            "trader": {
+                "name": "Ragman"
+            },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Textile_-_Part_2",
+            "minPlayerLevel": 25,
+            "taskRequirements": [
+                {
+                    "task": {
+                        "id": "5e383a6386f77465910ce1f3",
+                        "name": "Textile - Part 1"
+                    },
+                    "status": [
+                        "complete"
+                    ]
+                }
+            ],
+            "factionName": "BEAR",
+            "kappaRequired": false,
             "lightkeeperRequired": false
         },
         {
@@ -6413,31 +6534,6 @@
             "lightkeeperRequired": false
         },
         {
-            "id": "600302d73b897b11364cd161",
-            "tarkovDataId": 198,
-            "name": "Hunter",
-            "trader": {
-                "name": "Jaeger"
-            },
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Hunter",
-            "minPlayerLevel": 33,
-            "taskRequirements": [
-                {
-                    "task": {
-                        "id": "5d25e2ee86f77443e35162ea",
-                        "name": "The Huntsman Path - Woods Keeper"
-                    },
-                    "status": [
-                        "active",
-                        "complete"
-                    ]
-                }
-            ],
-            "factionName": "Any",
-            "kappaRequired": false,
-            "lightkeeperRequired": false
-        },
-        {
             "id": "5b477b6f86f7747290681823",
             "tarkovDataId": 95,
             "name": "Gunsmith - Part 18",
@@ -6507,6 +6603,30 @@
             ],
             "factionName": "Any",
             "kappaRequired": false,
+            "lightkeeperRequired": false
+        },
+        {
+            "id": "5c12452c86f7744b83469073",
+            "tarkovDataId": 9,
+            "name": "Perfect Mediator",
+            "trader": {
+                "name": "Prapor"
+            },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Perfect_Mediator",
+            "minPlayerLevel": 35,
+            "taskRequirements": [
+                {
+                    "task": {
+                        "id": "5967725e86f774601a446662",
+                        "name": "Shaking up the Teller"
+                    },
+                    "status": [
+                        "complete"
+                    ]
+                }
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
             "lightkeeperRequired": false
         },
         {
@@ -6595,30 +6715,6 @@
                     "task": {
                         "id": "5ac3464c86f7741d651d6877",
                         "name": "Farming - Part 4"
-                    },
-                    "status": [
-                        "complete"
-                    ]
-                }
-            ],
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": false
-        },
-        {
-            "id": "5c12452c86f7744b83469073",
-            "tarkovDataId": 9,
-            "name": "Perfect Mediator",
-            "trader": {
-                "name": "Prapor"
-            },
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Perfect_Mediator",
-            "minPlayerLevel": 35,
-            "taskRequirements": [
-                {
-                    "task": {
-                        "id": "5967725e86f774601a446662",
-                        "name": "Shaking up the Teller"
                     },
                     "status": [
                         "complete"
@@ -7744,102 +7840,6 @@
             "lightkeeperRequired": false
         },
         {
-            "id": "5e381b0286f77420e3417a74",
-            "tarkovDataId": 182,
-            "name": "Textile - Part 1",
-            "trader": {
-                "name": "Ragman"
-            },
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Textile_-_Part_1",
-            "minPlayerLevel": 42,
-            "taskRequirements": [
-                {
-                    "task": {
-                        "id": "5ae4497b86f7744cf402ed00",
-                        "name": "Sew it Good - Part 4"
-                    },
-                    "status": [
-                        "complete"
-                    ]
-                }
-            ],
-            "factionName": "USEC",
-            "kappaRequired": false,
-            "lightkeeperRequired": false
-        },
-        {
-            "id": "5e383a6386f77465910ce1f3",
-            "tarkovDataId": 182,
-            "name": "Textile - Part 1",
-            "trader": {
-                "name": "Ragman"
-            },
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Textile_-_Part_1",
-            "minPlayerLevel": 42,
-            "taskRequirements": [
-                {
-                    "task": {
-                        "id": "5ae4497b86f7744cf402ed00",
-                        "name": "Sew it Good - Part 4"
-                    },
-                    "status": [
-                        "complete"
-                    ]
-                }
-            ],
-            "factionName": "BEAR",
-            "kappaRequired": false,
-            "lightkeeperRequired": false
-        },
-        {
-            "id": "5e4d4ac186f774264f758336",
-            "tarkovDataId": 183,
-            "name": "Textile - Part 2",
-            "trader": {
-                "name": "Ragman"
-            },
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Textile_-_Part_2",
-            "minPlayerLevel": 42,
-            "taskRequirements": [
-                {
-                    "task": {
-                        "id": "5e381b0286f77420e3417a74",
-                        "name": "Textile - Part 1"
-                    },
-                    "status": [
-                        "complete"
-                    ]
-                }
-            ],
-            "factionName": "USEC",
-            "kappaRequired": false,
-            "lightkeeperRequired": false
-        },
-        {
-            "id": "5e4d515e86f77438b2195244",
-            "tarkovDataId": 183,
-            "name": "Textile - Part 2",
-            "trader": {
-                "name": "Ragman"
-            },
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Textile_-_Part_2",
-            "minPlayerLevel": 42,
-            "taskRequirements": [
-                {
-                    "task": {
-                        "id": "5e383a6386f77465910ce1f3",
-                        "name": "Textile - Part 1"
-                    },
-                    "status": [
-                        "complete"
-                    ]
-                }
-            ],
-            "factionName": "BEAR",
-            "kappaRequired": false,
-            "lightkeeperRequired": false
-        },
-        {
             "id": "60e71bb4e456d449cd47ca75",
             "tarkovDataId": 216,
             "name": "Intimidator",
@@ -8142,6 +8142,15 @@
                 },
                 {
                     "task": {
+                        "id": "608974af4b05530f55550c21",
+                        "name": "Inventory Check"
+                    },
+                    "status": [
+                        "complete"
+                    ]
+                },
+                {
+                    "task": {
                         "id": "6179aff8f57fb279792c60a1",
                         "name": "Overpopulation"
                     },
@@ -8153,15 +8162,6 @@
                     "task": {
                         "id": "6089743983426423753cd58a",
                         "name": "Safe Corridor"
-                    },
-                    "status": [
-                        "complete"
-                    ]
-                },
-                {
-                    "task": {
-                        "id": "608974af4b05530f55550c21",
-                        "name": "Inventory Check"
                     },
                     "status": [
                         "complete"
