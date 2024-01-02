@@ -8834,6 +8834,62 @@
             "lightkeeperRequired": false
         },
         {
+            "id": "657315df034d76585f032e01",
+            "tarkovDataId": null,
+            "name": "Shooting Cans",
+            "trader": {
+                "name": "Prapor"
+            },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Shooting_Cans",
+            "minPlayerLevel": 0,
+            "taskRequirements": [],
+            "factionName": "Any",
+            "kappaRequired": false,
+            "lightkeeperRequired": false
+        },
+        {
+            "id": "657315ddab5a49b71f098853",
+            "tarkovDataId": null,
+            "name": "First in Line",
+            "trader": {
+                "name": "Therapist"
+            },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/First_in_Line",
+            "minPlayerLevel": 0,
+            "taskRequirements": [],
+            "factionName": "Any",
+            "kappaRequired": false,
+            "lightkeeperRequired": false
+        },
+        {
+            "id": "657315e4a6af4ab4b50f3459",
+            "tarkovDataId": null,
+            "name": "Saving the Mole",
+            "trader": {
+                "name": "Mechanic"
+            },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Saving_the_Mole",
+            "minPlayerLevel": 0,
+            "taskRequirements": [],
+            "factionName": "Any",
+            "kappaRequired": false,
+            "lightkeeperRequired": false
+        },
+        {
+            "id": "657315e270bb0b8dba00cc48",
+            "tarkovDataId": null,
+            "name": "Burning Rubber",
+            "trader": {
+                "name": "Skier"
+            },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Burning_Rubber",
+            "minPlayerLevel": 0,
+            "taskRequirements": [],
+            "factionName": "Any",
+            "kappaRequired": false,
+            "lightkeeperRequired": false
+        },
+        {
             "id": "61e6e60c5ca3b3783662be27",
             "tarkovDataId": null,
             "name": "Compensation for Damage - Wergild",
