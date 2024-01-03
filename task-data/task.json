@@ -29,6 +29,30 @@
             "lightkeeperRequired": true
         },
         {
+            "id": "657315e1dccd301f1301416a",
+            "tarkovDataId": null,
+            "name": "Luxurious Life",
+            "trader": {
+                "name": "Prapor"
+            },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Luxurious_Life",
+            "minPlayerLevel": 1,
+            "taskRequirements": [
+                {
+                    "task": {
+                        "id": "5936d90786f7742b1420ba5b",
+                        "name": "Debut"
+                    },
+                    "status": [
+                        "complete"
+                    ]
+                }
+            ],
+            "factionName": "Any",
+            "kappaRequired": false,
+            "lightkeeperRequired": false
+        },
+        {
             "id": "5ac23c6186f7741247042bad",
             "tarkovDataId": 82,
             "name": "Gunsmith - Part 1",
