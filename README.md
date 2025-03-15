@@ -2,4 +2,4 @@
 
 KAPPAタスクをいい感じにするためのアプリです。
 
-[Github pages](https://tonamichan.github.io/kappa_chan/#/)で公開しています。
+[Github pages](https://tonamichan.github.io/kappature_beta/)で公開しています。
