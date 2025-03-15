@@ -3,7 +3,7 @@ const router = new VueRouter({
   mode: 'history',
   routes: [
     {
-      path: "/kappa_chan_beta",
+      path: "/",
       component: httpVueLoader("./main.vue"),
     },
   ],
