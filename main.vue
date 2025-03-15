@@ -416,7 +416,7 @@ module.exports = {
     },
     execListOfLK: function () {
       return this.execList.filter((taskId) => this.LKRequireTasks.some((task) => task.id === taskId))
-},
+    },
     progress: function () {
       per = 0
       if (this.displayKappaTasks) {
@@ -478,6 +478,10 @@ module.exports = {
         diggedTasks.push(targetTask)
       }
       targetTask.taskRequirements.forEach(requireInfo => {
+        if (requireInfo.status.includes('complete') && requireInfo.status.includes('active')) {
+          // active + completeの場合は受注時に出ただけのタスクで前提ではなさそう
+          return
+        } 
         this.digRequirementsTasks(requireInfo.task.id, diggedTasks)
       })
     },
