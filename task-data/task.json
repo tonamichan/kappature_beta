@@ -825,49 +825,49 @@
             "id": "59c50c8886f7745fed3193bf",
             "tarkovDataId": 14,
             "name": "The Punisher - Part 2",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/The_Punisher_-_Part_2",
-            "minPlayerLevel": 18,
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": true,
             "trader": {
                 "name": "Prapor"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/The_Punisher_-_Part_2",
+            "minPlayerLevel": 18,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "59c50a9e86f7745fef66f4ff",
                         "name": "The Punisher - Part 1"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": true
         },
         {
             "id": "59c512ad86f7741f0d09de9b",
             "tarkovDataId": 15,
             "name": "The Punisher - Part 3",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/The_Punisher_-_Part_3",
-            "minPlayerLevel": 19,
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": true,
             "trader": {
                 "name": "Prapor"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/The_Punisher_-_Part_3",
+            "minPlayerLevel": 19,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "59c50c8886f7745fed3193bf",
                         "name": "The Punisher - Part 2"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": true
         },
         {
             "id": "59c9392986f7742f6923add2",
@@ -945,49 +945,49 @@
             "id": "59ca264786f77445a80ed044",
             "tarkovDataId": 16,
             "name": "The Punisher - Part 4",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/The_Punisher_-_Part_4",
-            "minPlayerLevel": 20,
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": true,
             "trader": {
                 "name": "Prapor"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/The_Punisher_-_Part_4",
+            "minPlayerLevel": 20,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "59c512ad86f7741f0d09de9b",
                         "name": "The Punisher - Part 3"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": true
         },
         {
             "id": "59ca29fb86f77445ab465c87",
             "tarkovDataId": 17,
             "name": "The Punisher - Part 5",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/The_Punisher_-_Part_5",
-            "minPlayerLevel": 20,
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": false,
             "trader": {
                 "name": "Prapor"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/The_Punisher_-_Part_5",
+            "minPlayerLevel": 20,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "59ca264786f77445a80ed044",
                         "name": "The Punisher - Part 4"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": false
         },
         {
             "id": "59ca2eb686f77445a80ed049",
@@ -1282,25 +1282,25 @@
             "id": "5a27ba1c86f77461ea5a3c56",
             "tarkovDataId": 63,
             "name": "The Cult - Part 2",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/The_Cult_-_Part_2",
-            "minPlayerLevel": 18,
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": true,
             "trader": {
                 "name": "Peacekeeper"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/The_Cult_-_Part_2",
+            "minPlayerLevel": 18,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "5a27b9de86f77464e5044585",
                         "name": "The Cult - Part 1"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": true
         },
         {
             "id": "5a27ba9586f7741b543d8e85",
@@ -1618,121 +1618,121 @@
             "id": "5a68661a86f774500f48afb0",
             "tarkovDataId": 28,
             "name": "Health Care Privacy - Part 1",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Health_Care_Privacy_-_Part_1",
-            "minPlayerLevel": 20,
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": true,
             "trader": {
                 "name": "Therapist"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Health_Care_Privacy_-_Part_1",
+            "minPlayerLevel": 20,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "5969f9e986f7741dde183a50",
                         "name": "Pharmacist"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": true
         },
         {
             "id": "5a68663e86f774501078f78a",
             "tarkovDataId": 29,
             "name": "Health Care Privacy - Part 2",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Health_Care_Privacy_-_Part_2",
-            "minPlayerLevel": 20,
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": true,
             "trader": {
                 "name": "Therapist"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Health_Care_Privacy_-_Part_2",
+            "minPlayerLevel": 20,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "5a68661a86f774500f48afb0",
                         "name": "Health Care Privacy - Part 1"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": true
         },
         {
             "id": "5a68665c86f774255929b4c7",
             "tarkovDataId": 30,
             "name": "Health Care Privacy - Part 3",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Health_Care_Privacy_-_Part_3",
-            "minPlayerLevel": 20,
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": false,
             "trader": {
                 "name": "Therapist"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Health_Care_Privacy_-_Part_3",
+            "minPlayerLevel": 20,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "5a68663e86f774501078f78a",
                         "name": "Health Care Privacy - Part 2"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": false
         },
         {
             "id": "5a68667486f7742607157d28",
             "tarkovDataId": 31,
             "name": "Health Care Privacy - Part 4",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Health_Care_Privacy_-_Part_4",
-            "minPlayerLevel": 20,
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": false,
             "trader": {
                 "name": "Therapist"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Health_Care_Privacy_-_Part_4",
+            "minPlayerLevel": 20,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "5a68665c86f774255929b4c7",
                         "name": "Health Care Privacy - Part 3"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": false
         },
         {
             "id": "5a68669a86f774255929b4d4",
             "tarkovDataId": 32,
             "name": "Health Care Privacy - Part 5",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Health_Care_Privacy_-_Part_5",
-            "minPlayerLevel": 20,
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": false,
             "trader": {
                 "name": "Therapist"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Health_Care_Privacy_-_Part_5",
+            "minPlayerLevel": 20,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "5a68667486f7742607157d28",
                         "name": "Health Care Privacy - Part 4"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": false
         },
         {
             "id": "5ac23c6186f7741247042bad",
@@ -2228,25 +2228,25 @@
             "id": "5ae327c886f7745c7b3f2f3f",
             "tarkovDataId": 91,
             "name": "Gunsmith - Part 10",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Gunsmith_-_Part_10",
-            "minPlayerLevel": 20,
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": true,
             "trader": {
                 "name": "Mechanic"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Gunsmith_-_Part_10",
+            "minPlayerLevel": 20,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "639872fa9b4fb827b200d8e5",
                         "name": "Gunsmith - Part 9"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": true
         },
         {
             "id": "5ae3280386f7742a41359364",
@@ -2338,115 +2338,115 @@
             "id": "5ae448f286f77448d73c0131",
             "tarkovDataId": 113,
             "name": "The Blood of War - Part 1",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/The_Blood_of_War_-_Part_1",
-            "minPlayerLevel": 17,
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": true,
             "trader": {
                 "name": "Ragman"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/The_Blood_of_War_-_Part_1",
+            "minPlayerLevel": 17,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "5ae448e586f7744dcf0c2a67",
                         "name": "Big Sale"
-                    }
-                },
-                {
+                    },
                     "status": [
                         "complete"
-                    ],
+                    ]
+                },
+                {
                     "task": {
                         "id": "5ae448bf86f7744d733e55ee",
                         "name": "Make ULTRA Great Again"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": true
         },
         {
             "id": "5ae4490786f7744ca822adcc",
             "tarkovDataId": 114,
             "name": "Dressed to Kill",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Dressed_to_Kill",
-            "minPlayerLevel": 17,
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": false,
             "trader": {
                 "name": "Ragman"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Dressed_to_Kill",
+            "minPlayerLevel": 17,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "5ae448f286f77448d73c0131",
                         "name": "The Blood of War - Part 1"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": false
         },
         {
             "id": "5ae4493486f7744efa289417",
             "tarkovDataId": 115,
             "name": "Database - Part 1",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Database_-_Part_1",
-            "minPlayerLevel": 17,
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": true,
             "trader": {
                 "name": "Ragman"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Database_-_Part_1",
+            "minPlayerLevel": 17,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "5ae448e586f7744dcf0c2a67",
                         "name": "Big Sale"
-                    }
-                },
-                {
+                    },
                     "status": [
                         "complete"
-                    ],
+                    ]
+                },
+                {
                     "task": {
                         "id": "5ae448bf86f7744d733e55ee",
                         "name": "Make ULTRA Great Again"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": true
         },
         {
             "id": "5ae4493d86f7744b8e15aa8f",
             "tarkovDataId": 116,
             "name": "Database - Part 2",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Database_-_Part_2",
-            "minPlayerLevel": 17,
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": true,
             "trader": {
                 "name": "Ragman"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Database_-_Part_2",
+            "minPlayerLevel": 17,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "5ae4493486f7744efa289417",
                         "name": "Database - Part 1"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": true
         },
         {
             "id": "5ae4495086f77443c122bc40",
@@ -2629,34 +2629,34 @@
             "id": "5ae449b386f77446d8741719",
             "tarkovDataId": 117,
             "name": "Gratitude",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Gratitude",
-            "minPlayerLevel": 17,
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": false,
             "trader": {
                 "name": "Ragman"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Gratitude",
+            "minPlayerLevel": 17,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "5ae4490786f7744ca822adcc",
                         "name": "Dressed to Kill"
-                    }
-                },
-                {
+                    },
                     "status": [
                         "complete"
-                    ],
+                    ]
+                },
+                {
                     "task": {
                         "id": "5ae4493d86f7744b8e15aa8f",
                         "name": "Database - Part 2"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": false
         },
         {
             "id": "5ae449c386f7744bde357697",
@@ -3506,15 +3506,15 @@
             "id": "5c0d190cd09282029f5390d8",
             "tarkovDataId": 10,
             "name": "Grenadier",
+            "trader": {
+                "name": "Prapor"
+            },
             "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Grenadier",
             "minPlayerLevel": 20,
             "taskRequirements": [],
             "factionName": "Any",
             "kappaRequired": true,
-            "lightkeeperRequired": false,
-            "trader": {
-                "name": "Prapor"
-            }
+            "lightkeeperRequired": false
         },
         {
             "id": "5c0d1c4cd0928202a02a6f5c",
@@ -3706,25 +3706,25 @@
             "id": "5c1234c286f77406fa13baeb",
             "tarkovDataId": 56,
             "name": "Setup",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Setup",
-            "minPlayerLevel": 18,
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": true,
             "trader": {
                 "name": "Skier"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Setup",
+            "minPlayerLevel": 18,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "5a27d2af86f7744e1115b323",
                         "name": "Friend From the West - Part 2"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": true
         },
         {
             "id": "5c12452c86f7744b83469073",
@@ -4894,25 +4894,25 @@
             "id": "5d25e44f86f77443e625e385",
             "tarkovDataId": 166,
             "name": "The Huntsman Path - Eraser - Part 1",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/The_Huntsman_Path_-_Eraser_-_Part_1",
-            "minPlayerLevel": 20,
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": false,
             "trader": {
                 "name": "Jaeger"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/The_Huntsman_Path_-_Eraser_-_Part_1",
+            "minPlayerLevel": 20,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "608a768d82e40b3c727fd17d",
                         "name": "Pest Control"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": false
         },
         {
             "id": "5d25e45e86f77408251c4bfa",
@@ -4975,58 +4975,58 @@
             "id": "5d25e48186f77443e625e386",
             "tarkovDataId": 141,
             "name": "Courtesy Visit",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Courtesy_Visit",
-            "minPlayerLevel": 20,
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": true,
             "trader": {
                 "name": "Jaeger"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Courtesy_Visit",
+            "minPlayerLevel": 20,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "5d25cf2686f77443e75488d4",
                         "name": "The Survivalist Path - Tough Guy"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": true
         },
         {
             "id": "5d25e48d86f77408251c4bfb",
             "tarkovDataId": 177,
             "name": "Shady Business",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Shady_Business",
-            "minPlayerLevel": 20,
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": false,
             "trader": {
                 "name": "Jaeger"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Shady_Business",
+            "minPlayerLevel": 20,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "5d24b81486f77439c92d6ba8",
                         "name": "Acquaintance"
-                    }
-                },
-                {
+                    },
                     "status": [
                         "complete"
-                    ],
+                    ]
+                },
+                {
                     "task": {
                         "id": "5979ed3886f77431307dc512",
                         "name": "What\u2019s on the Flash Drive?"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": false
         },
         {
             "id": "5d25e4ad86f77443e625e387",
@@ -5104,25 +5104,25 @@
             "id": "5d25e4d586f77443e625e388",
             "tarkovDataId": 157,
             "name": "Reserve",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Reserve_(quest)",
-            "minPlayerLevel": 20,
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": false,
             "trader": {
                 "name": "Jaeger"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Reserve_(quest)",
+            "minPlayerLevel": 20,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "63a88045abf76d719f42d715",
                         "name": "The Delicious Sausage"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": false
         },
         {
             "id": "5d4bec3486f7743cac246665",
@@ -5152,26 +5152,26 @@
             "id": "5d6fb2c086f77449da599c24",
             "tarkovDataId": 197,
             "name": "An Apple a Day Keeps the Doctor Away",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/An_Apple_a_Day_Keeps_the_Doctor_Away",
-            "minPlayerLevel": 20,
-            "factionName": "Any",
-            "kappaRequired": false,
-            "lightkeeperRequired": false,
             "trader": {
                 "name": "Therapist"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/An_Apple_a_Day_Keeps_the_Doctor_Away",
+            "minPlayerLevel": 20,
             "taskRequirements": [
                 {
-                    "status": [
-                        "active",
-                        "complete"
-                    ],
                     "task": {
                         "id": "5a68667486f7742607157d28",
                         "name": "Health Care Privacy - Part 4"
-                    }
+                    },
+                    "status": [
+                        "active",
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": false,
+            "lightkeeperRequired": false
         },
         {
             "id": "5d6fbc2886f77449d825f9d3",
@@ -5729,25 +5729,25 @@
             "id": "60896b7bfa70fc097863b8f5",
             "tarkovDataId": 211,
             "name": "Documents",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Documents",
-            "minPlayerLevel": 19,
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": false,
             "trader": {
                 "name": "Prapor"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Documents",
+            "minPlayerLevel": 19,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "60896bca6ee58f38c417d4f2",
                         "name": "No Place for Renegades"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": false
         },
         {
             "id": "60896bca6ee58f38c417d4f2",
@@ -5874,49 +5874,49 @@
             "id": "608974af4b05530f55550c21",
             "tarkovDataId": 209,
             "name": "Inventory Check",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Inventory_Check",
-            "minPlayerLevel": 17,
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": false,
             "trader": {
                 "name": "Ragman"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Inventory_Check",
+            "minPlayerLevel": 17,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "608974d01a66564e74191fc0",
                         "name": "A Fuel Matter"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": false
         },
         {
             "id": "608974d01a66564e74191fc0",
             "tarkovDataId": 204,
             "name": "A Fuel Matter",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/A_Fuel_Matter",
-            "minPlayerLevel": 17,
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": true,
             "trader": {
                 "name": "Ragman"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/A_Fuel_Matter",
+            "minPlayerLevel": 17,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "5ae448f286f77448d73c0131",
                         "name": "The Blood of War - Part 1"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": true
         },
         {
             "id": "608a768d82e40b3c727fd17d",
@@ -6395,49 +6395,49 @@
             "id": "6179ac7511973d018217d0b9",
             "tarkovDataId": 232,
             "name": "Easy Job - Part 1",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Easy_Job_-_Part_1",
-            "minPlayerLevel": 18,
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": false,
             "trader": {
                 "name": "Prapor"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Easy_Job_-_Part_1",
+            "minPlayerLevel": 18,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "59c50c8886f7745fed3193bf",
                         "name": "The Punisher - Part 2"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": false
         },
         {
             "id": "6179acbdc760af5ad2053585",
             "tarkovDataId": 233,
             "name": "Easy Job - Part 2",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Easy_Job_-_Part_2",
-            "minPlayerLevel": 18,
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": false,
             "trader": {
                 "name": "Prapor"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Easy_Job_-_Part_2",
+            "minPlayerLevel": 18,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "6179ac7511973d018217d0b9",
                         "name": "Easy Job - Part 1"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": false
         },
         {
             "id": "6179ad0a6e9dd54ac275e3f2",
@@ -6467,26 +6467,26 @@
             "id": "6179ad56c760af5ad2053587",
             "tarkovDataId": 231,
             "name": "Seaside Vacation",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Seaside_Vacation",
-            "minPlayerLevel": 17,
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": true,
             "trader": {
                 "name": "Therapist"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Seaside_Vacation",
+            "minPlayerLevel": 17,
             "taskRequirements": [
                 {
-                    "status": [
-                        "active",
-                        "complete"
-                    ],
                     "task": {
                         "id": "60896e28e4a85c72ef3fa301",
                         "name": "Disease History"
-                    }
+                    },
+                    "status": [
+                        "active",
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": true
         },
         {
             "id": "6179afd0bca27a099552e040",
@@ -6712,25 +6712,25 @@
             "id": "6193850f60b34236ee0483de",
             "tarkovDataId": 229,
             "name": "Long Road",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Long_Road",
-            "minPlayerLevel": 20,
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": false,
             "trader": {
                 "name": "Skier"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Long_Road",
+            "minPlayerLevel": 20,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "5a27d2af86f7744e1115b323",
                         "name": "Friend From the West - Part 2"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": false
         },
         {
             "id": "61958c366726521dd96828ec",
@@ -7300,25 +7300,25 @@
             "id": "626bd75c71bd851e971b82a5",
             "tarkovDataId": 249,
             "name": "Reconnaissance",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Reconnaissance",
-            "minPlayerLevel": 18,
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": false,
             "trader": {
                 "name": "Prapor"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Reconnaissance",
+            "minPlayerLevel": 18,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "6179ac7511973d018217d0b9",
                         "name": "Easy Job - Part 1"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": false
         },
         {
             "id": "626bd75d5bef5d7d590bd415",
@@ -7424,25 +7424,25 @@
             "id": "638fcd23dc65553116701d33",
             "tarkovDataId": null,
             "name": "Audit",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Audit",
-            "minPlayerLevel": 17,
-            "factionName": "Any",
-            "kappaRequired": false,
-            "lightkeeperRequired": false,
             "trader": {
                 "name": "Ragman"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Audit",
+            "minPlayerLevel": 17,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "5ae448a386f7744d3730fff0",
                         "name": "Only Business"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": false,
+            "lightkeeperRequired": false
         },
         {
             "id": "639135534b15ca31f76bc317",
@@ -7496,49 +7496,49 @@
             "id": "639135a7e705511c8a4a1b78",
             "tarkovDataId": null,
             "name": "Ballet Lover",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Ballet_Lover",
-            "minPlayerLevel": 20,
-            "factionName": "Any",
-            "kappaRequired": false,
-            "lightkeeperRequired": false,
             "trader": {
                 "name": "Ragman"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Ballet_Lover",
+            "minPlayerLevel": 20,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "638fcd23dc65553116701d33",
                         "name": "Audit"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": false,
+            "lightkeeperRequired": false
         },
         {
             "id": "639135b04ed9512be67647d7",
             "tarkovDataId": null,
             "name": "Glory to CPSU - Part 1",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Glory_to_CPSU_-_Part_1",
-            "minPlayerLevel": 17,
-            "factionName": "Any",
-            "kappaRequired": false,
-            "lightkeeperRequired": false,
             "trader": {
                 "name": "Prapor"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Glory_to_CPSU_-_Part_1",
+            "minPlayerLevel": 17,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "6391359b9444fb141f4e6ee6",
                         "name": "You've Got Mail"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": false,
+            "lightkeeperRequired": false
         },
         {
             "id": "639135bbc115f907b14700a6",
@@ -7731,25 +7731,25 @@
             "id": "639136d68ba6894d155e77cf",
             "tarkovDataId": null,
             "name": "Green Corridor",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Green_Corridor",
-            "minPlayerLevel": 20,
-            "factionName": "BEAR",
-            "kappaRequired": false,
-            "lightkeeperRequired": false,
             "trader": {
                 "name": "Prapor"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Green_Corridor",
+            "minPlayerLevel": 20,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "5a27bafb86f7741c73584017",
                         "name": "Spa Tour - Part 7"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "BEAR",
+            "kappaRequired": false,
+            "lightkeeperRequired": false
         },
         {
             "id": "639136df4b15ca31f76bc31f",
@@ -7827,25 +7827,25 @@
             "id": "639136fa9444fb141f4e6eee",
             "tarkovDataId": null,
             "name": "Watching You",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Watching_You",
-            "minPlayerLevel": 20,
-            "factionName": "Any",
-            "kappaRequired": false,
-            "lightkeeperRequired": false,
             "trader": {
                 "name": "Mechanic"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Watching_You",
+            "minPlayerLevel": 20,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "63913715f8e5dd32bf4e3aaa",
                         "name": "Broadcast - Part 2"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": false,
+            "lightkeeperRequired": false
         },
         {
             "id": "63913715f8e5dd32bf4e3aaa",
@@ -7971,25 +7971,25 @@
             "id": "639282134ed9512be67647ed",
             "tarkovDataId": null,
             "name": "Road Closed",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Road_Closed",
-            "minPlayerLevel": 20,
-            "factionName": "USEC",
-            "kappaRequired": false,
-            "lightkeeperRequired": false,
             "trader": {
                 "name": "Peacekeeper"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Road_Closed",
+            "minPlayerLevel": 20,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "5a27bafb86f7741c73584017",
                         "name": "Spa Tour - Part 7"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "USEC",
+            "kappaRequired": false,
+            "lightkeeperRequired": false
         },
         {
             "id": "63966faeea19ac7ed845db2c",
@@ -8268,25 +8268,25 @@
             "id": "639872fa9b4fb827b200d8e5",
             "tarkovDataId": 90,
             "name": "Gunsmith - Part 9",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Gunsmith_-_Part_9",
-            "minPlayerLevel": 19,
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": true,
             "trader": {
                 "name": "Mechanic"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Gunsmith_-_Part_9",
+            "minPlayerLevel": 19,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "5ae3277186f7745973054106",
                         "name": "Gunsmith - Part 8"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": true
         },
         {
             "id": "639872fc93ae507d5858c3a6",
@@ -8412,25 +8412,25 @@
             "id": "63a511ea30d85e10e375b045",
             "tarkovDataId": null,
             "name": "Broadcast - Part 3",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Broadcast_-_Part_3",
-            "minPlayerLevel": 20,
-            "factionName": "Any",
-            "kappaRequired": false,
-            "lightkeeperRequired": false,
             "trader": {
                 "name": "Jaeger"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Broadcast_-_Part_3",
+            "minPlayerLevel": 20,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "63913715f8e5dd32bf4e3aaa",
                         "name": "Broadcast - Part 2"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": false,
+            "lightkeeperRequired": false
         },
         {
             "id": "63a5cf262964a7488f5243ce",
@@ -8608,34 +8608,34 @@
             "id": "64e7b971f9d6fa49d6769b44",
             "tarkovDataId": null,
             "name": "The Huntsman Path - Big Game",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/The_Huntsman_Path_-_Big_Game",
-            "minPlayerLevel": 17,
-            "factionName": "Any",
-            "kappaRequired": false,
-            "lightkeeperRequired": false,
             "trader": {
                 "name": "Jaeger"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/The_Huntsman_Path_-_Big_Game",
+            "minPlayerLevel": 17,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "5d25e2cc86f77443e47ae019",
                         "name": "The Huntsman Path - Forest Cleaning"
-                    }
-                },
-                {
+                    },
                     "status": [
                         "complete"
-                    ],
+                    ]
+                },
+                {
                     "task": {
                         "id": "639135e0fa894f0a866afde6",
                         "name": "Urban Medicine"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": false,
+            "lightkeeperRequired": false
         },
         {
             "id": "64e7b99017ab941a6f7bf9d7",
@@ -8761,34 +8761,34 @@
             "id": "64f3176921045e77405d63b5",
             "tarkovDataId": null,
             "name": "Ambulances Again",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Ambulances_Again",
-            "minPlayerLevel": 17,
-            "factionName": "Any",
-            "kappaRequired": false,
-            "lightkeeperRequired": false,
             "trader": {
                 "name": "Therapist"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Ambulances_Again",
+            "minPlayerLevel": 17,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "639136e84ed9512be67647db",
                         "name": "Cease Fire!"
-                    }
-                },
-                {
+                    },
                     "status": [
                         "complete"
-                    ],
+                    ]
+                },
+                {
                     "task": {
                         "id": "639135e0fa894f0a866afde6",
                         "name": "Urban Medicine"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": false,
+            "lightkeeperRequired": false
         },
         {
             "id": "64f5aac4b63b74469b6c14c2",
@@ -9306,25 +9306,25 @@
             "id": "65802b627b44fa5e14638899",
             "tarkovDataId": null,
             "name": "Nothing Fishy About This",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Nothing_Fishy_About_This",
-            "minPlayerLevel": 17,
-            "factionName": "Any",
-            "kappaRequired": false,
-            "lightkeeperRequired": false,
             "trader": {
                 "name": "Ragman"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Nothing_Fishy_About_This",
+            "minPlayerLevel": 17,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "5ae448e586f7744dcf0c2a67",
                         "name": "Big Sale"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": false,
+            "lightkeeperRequired": false
         },
         {
             "id": "66058cb22cee99303f1ba067",
@@ -10657,25 +10657,25 @@
             "id": "66aa58245ab22944110db6e9",
             "tarkovDataId": null,
             "name": "New Day, New Paths",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/New_Day%2C_New_Paths",
-            "minPlayerLevel": 17,
-            "factionName": "Any",
-            "kappaRequired": false,
-            "lightkeeperRequired": false,
             "trader": {
                 "name": "Peacekeeper"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/New_Day%2C_New_Paths",
+            "minPlayerLevel": 17,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "639135f286e646067c176a87",
                         "name": "Revision - Streets of Tarkov"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": false,
+            "lightkeeperRequired": false
         },
         {
             "id": "66aa61663aa37705c5024277",
@@ -10729,25 +10729,25 @@
             "id": "66ab970848ddbe9d4a0c49a8",
             "tarkovDataId": null,
             "name": "Special Comms",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Special_Comms",
-            "minPlayerLevel": 19,
-            "factionName": "Any",
-            "kappaRequired": false,
-            "lightkeeperRequired": false,
             "trader": {
                 "name": "Prapor"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Special_Comms",
+            "minPlayerLevel": 19,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "60896b7bfa70fc097863b8f5",
                         "name": "Documents"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": false,
+            "lightkeeperRequired": false
         },
         {
             "id": "66ab9da7eb102b9bcd08591c",
@@ -11632,121 +11632,121 @@
             "id": "6752f6d83038f7df520c83e8",
             "tarkovDataId": null,
             "name": "A Helping Hand",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/A_Helping_Hand",
-            "minPlayerLevel": 20,
-            "factionName": "Any",
-            "kappaRequired": false,
-            "lightkeeperRequired": false,
             "trader": {
                 "name": "Mechanic"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/A_Helping_Hand",
+            "minPlayerLevel": 20,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "657315e4a6af4ab4b50f3459",
                         "name": "Saving the Mole"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": false,
+            "lightkeeperRequired": false
         },
         {
             "id": "675c03d1f7da9792a405549a",
             "tarkovDataId": null,
             "name": "Abandoned Cargo",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Abandoned_Cargo",
-            "minPlayerLevel": 17,
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": false,
             "trader": {
                 "name": "Therapist"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Abandoned_Cargo",
+            "minPlayerLevel": 17,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "6179ad56c760af5ad2053587",
                         "name": "Seaside Vacation"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": false
         },
         {
             "id": "675c047fa46173572a0bd878",
             "tarkovDataId": null,
             "name": "Shipment Tracking",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Shipment_Tracking",
-            "minPlayerLevel": 17,
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": false,
             "trader": {
                 "name": "Therapist"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Shipment_Tracking",
+            "minPlayerLevel": 17,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "675c03d1f7da9792a405549a",
                         "name": "Abandoned Cargo"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": false
         },
         {
             "id": "675c04f4db8807b75d0f38e8",
             "tarkovDataId": null,
             "name": "Closer to the People",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Closer_to_the_People",
-            "minPlayerLevel": 17,
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": false,
             "trader": {
                 "name": "Therapist"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Closer_to_the_People",
+            "minPlayerLevel": 17,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "675c047fa46173572a0bd878",
                         "name": "Shipment Tracking"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": false
         },
         {
             "id": "675c085d59b0575973005f52",
             "tarkovDataId": null,
             "name": "Break the Deal",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Break_the_Deal",
-            "minPlayerLevel": 17,
-            "factionName": "Any",
-            "kappaRequired": true,
-            "lightkeeperRequired": false,
             "trader": {
                 "name": "Ragman"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Break_the_Deal",
+            "minPlayerLevel": 17,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "5ae448bf86f7744d733e55ee",
                         "name": "Make ULTRA Great Again"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": true,
+            "lightkeeperRequired": false
         },
         {
             "id": "675c1570526ff496850895d9",
@@ -11953,25 +11953,25 @@
             "id": "676529af9c90953d090882e7",
             "tarkovDataId": null,
             "name": "Gunsmith - Old Friend's Request",
-            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Gunsmith_-_Old_Friend's_Request",
-            "minPlayerLevel": 17,
-            "factionName": "Any",
-            "kappaRequired": false,
-            "lightkeeperRequired": false,
             "trader": {
                 "name": "Mechanic"
             },
+            "wikiLink": "https://escapefromtarkov.fandom.com/wiki/Gunsmith_-_Old_Friend's_Request",
+            "minPlayerLevel": 17,
             "taskRequirements": [
                 {
-                    "status": [
-                        "complete"
-                    ],
                     "task": {
                         "id": "5ac244eb86f7741356335af1",
                         "name": "Gunsmith - Part 7"
-                    }
+                    },
+                    "status": [
+                        "complete"
+                    ]
                 }
-            ]
+            ],
+            "factionName": "Any",
+            "kappaRequired": false,
+            "lightkeeperRequired": false
         },
         {
             "id": "67a09636b8725511260bc421",
