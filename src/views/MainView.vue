@@ -331,7 +331,7 @@
 </template>
 
 <script>
-module.exports = {
+export default {
   data() {
     return {
       tasks: [],
@@ -362,11 +362,11 @@ module.exports = {
   },
   computed: {
     kappaRequireTasks: function () {
-      tasks = this.tasks.filter((task) => task.kappaRequired);
+      const tasks = this.tasks.filter((task) => task.kappaRequired);
       return tasks;
     },
     LKRequireTasks: function () {
-      tasks = this.tasks.filter((task) => task.lightkeeperRequired);
+      const tasks = this.tasks.filter((task) => task.lightkeeperRequired);
       return tasks;
     },
     filteredTasks: function () {
@@ -380,6 +380,7 @@ module.exports = {
     },
     displayTasks: function () {
       // 計算量注意
+      let tasks;
       if (this.displayKappaTasks) {
         tasks = this.kappaRequireTasks.filter((task) => {
           return (
@@ -416,9 +417,9 @@ module.exports = {
     },
     execListOfLK: function () {
       return this.execList.filter((taskId) => this.LKRequireTasks.some((task) => task.id === taskId))
-},
+    },
     progress: function () {
-      per = 0
+      let per = 0
       if (this.displayKappaTasks) {
         per = this.execList.length / this.kappaRequireTasks.length;
       } else {
@@ -429,7 +430,7 @@ module.exports = {
   },
   methods: {
     setTaskData: function() {
-      fetch("./task-data/task.json")
+      fetch("/task-data/task.json")
       .then((response) => response.json())
       .then((json) => this.tasks = json.data);
     },
@@ -439,7 +440,7 @@ module.exports = {
         // 新規に完了した
         this.execList.push(id);
         const doneTask = this.kappaRequireTasks.find((el) => el.id == id);
-        if (doneTask.taskRequirements.length > 0) {
+        if (doneTask && doneTask.taskRequirements && doneTask.taskRequirements.length > 0) {
           // 前提タスク自動完了モーダルを用意してあげる
           this.setRelatedUndoneTasks(doneTask)
           if (this.RelatedUndoneTasks.length > 0) {
@@ -477,13 +478,15 @@ module.exports = {
         // まだ掘ってなくて未完了のやつだけ集める
         diggedTasks.push(targetTask)
       }
-      targetTask.taskRequirements.forEach(requireInfo => {
-        if (requireInfo.status.includes('complete') && requireInfo.status.includes('active')) {
-          // active + completeの場合は受注時に出ただけのタスクで前提ではなさそう
-          return
-        } 
-        this.digRequirementsTasks(requireInfo.task.id, diggedTasks)
-      })
+      if (targetTask && targetTask.taskRequirements) {
+        targetTask.taskRequirements.forEach(requireInfo => {
+          if (requireInfo.status.includes('complete') && requireInfo.status.includes('active')) {
+            // active + completeの場合は受注時に出ただけのタスクで前提ではなさそう
+            return
+          } 
+          this.digRequirementsTasks(requireInfo.task.id, diggedTasks)
+        })
+      }
     },
     autoDoneRelatedUndoneTasks: function() {
       this.RelatedUndoneTasks.forEach((task) => {
@@ -519,7 +522,7 @@ module.exports = {
       this.closeAllResetModal()
     },
     generateWikiUrl: function (task) {
-      // 末尾のハテナのはほぼWhat’s on the Flash Drive?用
+      // 末尾のハテナのはほぼWhat's on the Flash Drive?用
       return (
         "https://wikiwiki.jp/eft/" +
         task.trader.name +

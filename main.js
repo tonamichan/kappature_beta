@@ -2,7 +2,7 @@ const router = new VueRouter({
   mode: 'history',
   routes: [
     {
-      path: "/kappature_beta",
+      path: "/kappature",
       component: httpVueLoader("./main.vue"),
     },
     {
