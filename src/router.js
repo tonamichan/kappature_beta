@@ -8,7 +8,7 @@ const router = new VueRouter({
   mode: 'history',
   routes: [
     {
-      path: "/kappature",
+      path: "/kappature_beta",
       component: MainView,
     },
     {
