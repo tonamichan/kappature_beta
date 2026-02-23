@@ -30,6 +30,7 @@ const copyPublicPlugin = {
 }
 
 export default defineConfig({
+  base: './',
   plugins: [vue(), copyPublicPlugin],
   build: {
     outDir: 'docs',
